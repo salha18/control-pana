@@ -11,7 +11,7 @@
     margin: 0;
     font-family: sans-serif;
     background:url(67.jpg) ;
-    background-size: cover;
+    background-size: cover; 
 
 	}
   form{
@@ -82,7 +82,7 @@ if (!$conn) {
 
 if (isset($_POST['send'])) {
  
-$sql = " UPDATE `arm` SET `arm2`='".$_POST['sliderN1']."', `arm3`='".$_POST['sliderN2']."', `arm1`='".$_POST['sliderN3']."', `arm4`='".$_POST['sliderN4']."', `arm5`='".$_POST['sliderN5']."', `arm6`='".$_POST['sliderN6']."'  WHERE `ID`='1'";
+$sql = " UPDATE `arm` SET `arm1`='".$_POST['sliderN1']."', `arm2`='".$_POST['sliderN2']."', `arm3`='".$_POST['sliderN3']."', `arm4`='".$_POST['sliderN4']."', `arm5`='".$_POST['sliderN5']."', `arm6`='".$_POST['sliderN6']."'  WHERE `ID`='1'";
 
 $result = $conn->query($sql);
  }
