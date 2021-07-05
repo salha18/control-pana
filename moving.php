@@ -125,5 +125,18 @@ $sql = " UPDATE `control` SET  `forward`='F' WHERE `ID`='1'";
 $result = $conn->query($sql);
  }
  ?>
+	<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "dc473cdb-38b2-4114-a77a-56c5f3fec455", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "597d1fb7-d877-47eb-8dcf-489896a4c5c6", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
 </body>
 </html>
